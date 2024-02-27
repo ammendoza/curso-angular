@@ -1,0 +1,27 @@
+      
+<h1>If</h1>
+
+@if (name) {
+  <div>{{name}}</div>
+}
+@else {
+  <button>Login</button>
+}
+
+<hr />
+    
+<h2>For</h2>
+@for (item of elements; track item) {
+  {{ item }}
+}
+
+<hr />
+
+<h2>Evento</h2>
+<button (click)="miFuncionClick($event)">Ejecutar función</button>
+
+<hr />
+
+<h2>Calendario</h2>
+
+<app-grid></app-grid>
